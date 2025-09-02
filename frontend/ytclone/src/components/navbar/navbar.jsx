@@ -1,6 +1,4 @@
 import React from "react";
-import menu_logo from "../../assets/menu-icon-24.png";
-import ytlogo from "../../assets/yt_logo.jpg";
 import profile from "../../assets/Cropped_Image.png";
 import yt from "../../assets/yt.webp";
 
@@ -15,7 +13,7 @@ const Navbar = () => {
                 </button>
                 <div className="flex gap-2">
                     <img src={yt} alt="" className="w-12"/>
-                    <p className="text-2xl font-semiboldbold">YouTube</p>
+                    <p className="text-2xl font-semibold">YouTube</p>
                 </div>
             </div>
             <div className="flex w-full max-w-xl justify-center">
