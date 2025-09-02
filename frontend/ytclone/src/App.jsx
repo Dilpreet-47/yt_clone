@@ -1,9 +1,10 @@
 import React from "react";
+import Navbar from "./components/navbar/navbar";
 
 const App = () => {
-  return(
-    <div className="flex bg-slate-500 h-screen w-screen justify-center items-center">
-      <h1 className="text-3xl text-white">hello world</h1>
+  return (
+    <div className="flex flex-col bg-white h-screen w-screen p-4">
+      <Navbar/>
     </div>
   )
 }
