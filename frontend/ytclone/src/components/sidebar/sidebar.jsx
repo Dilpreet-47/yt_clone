@@ -9,9 +9,9 @@ import fashion from "../../assets/fashion.png"
 const Sidebar = ({ side }) => {
     return (
 
-        <div className={`flex flex-col h-full w-[14%] overflow-y-auto overflow-x-hidden m-4 ${side ? "w-[14%]" : "w-[3%]"}`}>
+        <div className={`${side ? "w-[14%]" : "w-[3%]"}`}>
             {side ? (
-                <div>
+                <div className="flex flex-col h-full overflow-y-auto overflow-x-hidden m-4">
                     <button className="flex items-center gap-4 p-2 rounded-xl hover:bg-gray-200 w-full">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -175,9 +175,10 @@ const Sidebar = ({ side }) => {
 
                         <p className="text-xl ">Podcasts</p>
                     </button>
+
                 </div>
             ) : (
-                <div className="flex flex-col ">
+                <div className="flex flex-col w-[3%] ml-8">
                     <button className="flex flex-col justify-center items-center gap-2 p-4 rounded-xl hover:bg-gray-200 w-full h-25">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

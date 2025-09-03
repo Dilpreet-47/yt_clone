@@ -10,7 +10,7 @@ import logo3 from "../../assets/video_banners/logo3.jpg"
 
 const Feed = () => {
     return (
-        <div className="w-[85%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
+        <div className="w-[85%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4 m-8">
             {/* Card 1 */}
             <div className="flex flex-col gap-2">
                 {/* Thumbnail */}
@@ -35,8 +35,7 @@ const Feed = () => {
                 </div>
                 <p className="text-sm text-gray-600">1.2M views • 2 weeks ago</p>
             </div>
-
-
+            
 
             {/* Add more cards the same way... */}
         </div>

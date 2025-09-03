@@ -5,7 +5,7 @@ import Home from "./home";
 const App = () => {
 
   return (
-    <div className="flex flex-col bg-white h-screen w-screen overflow-hidden gap-2">
+    <div className="flex flex-col bg-white h-screen w-screen gap-2">
       <Home/>
     </div>
   ) 
