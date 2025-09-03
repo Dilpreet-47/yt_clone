@@ -177,7 +177,7 @@ const Sidebar = ({ side }) => {
                     </button>
                 </div>
             ) : (
-                <div className="">
+                <div className="flex flex-col ">
                     <button className="flex flex-col justify-center items-center gap-2 p-4 rounded-xl hover:bg-gray-200 w-full h-25">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
