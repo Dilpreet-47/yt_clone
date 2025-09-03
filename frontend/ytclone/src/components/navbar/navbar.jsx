@@ -1,12 +1,11 @@
-import React from "react";
 import profile from "../../assets/Cropped_Image.png";
 import yt from "../../assets/yt.webp";
 
-const Navbar = () => {
+const Navbar = ({ toggleSidebar }) => {
     return (
         <nav className="flex justify-between items-center h-14 w-full max-w-screen-3xl z-10 overflow-hidden mr-2 my-2">
             <div className="flex gap-4 justify-center items-center ml-6">
-                <button className="flex justify-center items-center h-12 w-12 border border-none rounded-full hover:bg-gray-200" onClick={() => { }}>
+                <button className="flex justify-center items-center h-12 w-12 border border-none rounded-full hover:bg-gray-200" onClick={toggleSidebar}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
