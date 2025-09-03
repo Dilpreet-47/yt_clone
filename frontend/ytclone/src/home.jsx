@@ -19,7 +19,7 @@ const Home = () => {
       <div className="flex flex-1 overflow-hidden">
           <Sidebar side={side} />
         <div className="flex-1 h-full overflow-y-auto">
-          <Feed />
+          <Feed side={side} />
         </div>
       </div>
     </div>
