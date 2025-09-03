@@ -8,7 +8,7 @@ import fashion from "../../assets/fashion.png"
 
 const Sidebar = () => {
     return (
-        <div className="flex flex-col h-full w-[14%] overflow-y-auto">
+        <div className="flex flex-col h-full w-[14%] overflow-y-auto m-4">
             <button className="flex items-center gap-4 p-2 rounded-xl hover:bg-gray-200 w-full">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"

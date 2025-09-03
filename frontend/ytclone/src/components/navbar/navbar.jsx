@@ -4,15 +4,15 @@ import yt from "../../assets/yt.webp";
 
 const Navbar = () => {
     return (
-        <nav className="flex justify-between items-center h-14 w-full max-w-screen-3xl ">
-            <div className="flex gap-4 justify-center items-center">
-                <button className="flex justify-center items-center h-12 w-12 border border-none rounded-full hover:bg-gray-200">
+        <nav className="flex justify-between items-center h-14 w-full max-w-screen-3xl z-10 overflow-hidden mr-2 my-2">
+            <div className="flex gap-4 justify-center items-center ml-6">
+                <button className="flex justify-center items-center h-12 w-12 border border-none rounded-full hover:bg-gray-200" onClick={() => { }}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
                 </button>
                 <div className="flex gap-2">
-                    <img src={yt} alt="" className="w-12"/>
+                    <img src={yt} alt="" className="w-12" />
                     <p className="text-2xl font-semibold">YouTube</p>
                 </div>
             </div>
@@ -32,7 +32,7 @@ const Navbar = () => {
                 </button>
             </div>
 
-            <div className="flex justify-center items-center gap-4 ">
+            <div className="flex items-center gap-4 ">
 
                 <button className="flex justify-center items-center border border-gray-300 rounded-full px-4 py-2 gap-2 hover:bg-gray-200">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -48,8 +48,8 @@ const Navbar = () => {
                     </svg>
                 </button>
 
-                <button className="flex w-14 h-14 border border-black rounded-full">
-                    <img src={profile} alt="profile" className="rounded-full w-14 h-14" />
+                <button className="flex w-10 h-10 border border-black rounded-full mr-8">
+                    <img src={profile} alt="profile" className="rounded-full w-10 h-10" />
                 </button>
 
             </div>
