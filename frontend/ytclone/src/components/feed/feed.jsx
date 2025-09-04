@@ -10,14 +10,30 @@ import vscode from "../../assets/video_banners/vscode.jpg"
 import logo1 from "../../assets/video_banners/logo1.jpg"
 import logo2 from "../../assets/video_banners/logo2.jpg"
 import logo3 from "../../assets/video_banners/logo3.jpg"
+import axios from 'axios';
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react"
 
 const Feed = () => {
+    const [videos, setVideos] = useState([]);
+
+    useEffect(() => {
+        const fetchVideos = async () => {
+            try {
+                const response = await axios.get('http://localhost:5000/api/videos');
+                setVideos(response.data);
+            } catch (err) {
+                console.error("Error fetching videos:", err);
+            }
+        };
+        fetchVideos();
+    }, []);
+
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4 m-8">
 
             {/* Card 1 */}
-            <Link to="/video" className="flex flex-col gap-2">
+            <Link to={`/video/${videos._id}`} key={video.id} className="flex flex-col gap-2">
                 <img src={dbz} alt="Dragon Ball" className="rounded-2xl w-full h-48 object-cover" />
                 <div className="flex items-center gap-2">
                     <img src={logo1} alt="Channel Logo" className="w-10 h-10 rounded-full" />
