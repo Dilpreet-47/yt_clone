@@ -12,7 +12,7 @@ const Home = () => {
     <div className="flex flex-col bg-white h-screen w-screen overflow-hidden">
       {/* Navbar fixed height */}
 
-      <Navbar toggleSidebar={toggleSidebar} />
+      <Navbar toggleSidebar={toggleSidebar} />  
 
 
       {/* Sidebar + Feed side by side */}
