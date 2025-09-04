@@ -3,7 +3,7 @@ import yt from "../../assets/yt.webp";
 
 const Navbar = ({ toggleSidebar }) => {
     return (
-        <nav className="flex justify-between items-center h-14 w-full max-w-screen-3xl z-10 overflow-hidden mr-2 my-2">
+        <nav className="flex justify-between items-center h-12 w-full max-w-screen-3xl z-10 overflow-hidden mr-2 my-4 p-4">
             <div className="flex gap-4 justify-center items-center ml-6">
                 <button className="flex justify-center items-center h-12 w-12 border border-none rounded-full hover:bg-gray-200" onClick={toggleSidebar}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">

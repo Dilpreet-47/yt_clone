@@ -1,14 +1,22 @@
-import React, { useState } from "react";
-import Home from "./home";
+// src/App.js
 
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./home";
+import Playvideo from "./components/playvideo/playvideo1.jsx";
 
 const App = () => {
-
   return (
-    <div className="flex flex-col bg-white h-screen w-screen gap-2">
-      <Home/>
-    </div>
-  ) 
-}
+    <Router>
+      <Routes>
+        {/* Route for the main home page */}
+        <Route path="/" element={<Home />} />
+        
+        {/* Route for the video player page */}
+        <Route path="/video" element={<Playvideo />} />
+      </Routes>
+    </Router>
+  );
+};
 
 export default App;

@@ -11,17 +11,18 @@ const Home = () => {
   return (
     <div className="flex flex-col bg-white h-screen w-screen overflow-hidden">
       {/* Navbar fixed height */}
-      <div className="h-14">
-        <Navbar toggleSidebar={toggleSidebar} />
-      </div>
+
+      <Navbar toggleSidebar={toggleSidebar} />
+
 
       {/* Sidebar + Feed side by side */}
       <div className="flex flex-1 overflow-hidden">
-          <Sidebar side={side} />
-        <div className="flex-1 h-full overflow-y-auto">
-          <Feed side={side} />
-        </div>
+        <Sidebar side={side} />
+      
+      <div className="flex-1 h-full overflow-y-auto">
+        <Feed side={side} />
       </div>
+    </div>
     </div>
   );
 };
