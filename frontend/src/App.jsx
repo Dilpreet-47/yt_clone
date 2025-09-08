@@ -2,7 +2,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./home";
-import Playvideo from "./components/playvideo/playvideo1.jsx";
+import Playvideo from "./components/playvideo/playvideo.jsx";
 
 const App = () => {
   return (

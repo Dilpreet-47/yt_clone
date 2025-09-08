@@ -1,6 +1,7 @@
 import express from 'express';
 import Video from '../models/Video.js';
 
+
 const router = express.Router();
 
 // GET a single video by ID
